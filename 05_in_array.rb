@@ -18,6 +18,6 @@ def in_array (needle, haystack)
 end
 
 
-# Beast Mode:
+# Beast Mode: wowow
 
 # Redo the challenge but try solving it again in a different way.
