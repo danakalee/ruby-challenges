@@ -14,7 +14,7 @@
 # "hello", ["hi","howdy","hello"] should return true.
 
 def in_array (needle, haystack)
-  # start code here more changes
+  return haystack.include?(needle)
 end
 
 
