@@ -17,7 +17,24 @@
 # Examples - what if both numbers are equal or are strings?
 
 def largest_number (number_1, number_2)
-  # Your code here
+  number_1 = number_1.to_i
+  number_2 = number_2.to_i
+  if number_1 > number_2
+  return number_1
+  elsif number_2 > number_1
+  return number_2
+  elsif number_1 == number_2
+    return "They're equal"    
+ else
+    return "Incorrect input"
 end
 
-largest_number(100,50)
+end
+
+puts largest_number(100,50)
+puts largest_number(10,20)
+puts largest_number(50,50)
+puts largest_number("50",50)
+puts largest_number("hello",50)
+
+
