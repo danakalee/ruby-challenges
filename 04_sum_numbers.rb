@@ -11,8 +11,16 @@
 # ruby tests/04_sum_numbers_test.rb
 
 def sum_numbers (numbers)
-  # Your code here
+  numbers.inject(0) {|sum, i|  sum + i }
 end
+
+#turn input into an array
+#add array together
+#return value of array
+
+puts sum_numbers([10, 30, 70])
+puts sum_numbers([])
+
 
 
 # OPTIONAL:
