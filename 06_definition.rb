@@ -15,5 +15,29 @@
 # ruby tests/06_definition_test.rb
 
 class Definition
-# Your code here
+
+    def initialize
+       @word = word
+       @definition = definition
+       dictionary = {}
+    end
+
+def add_word(word, definition)
+    #add pararmetes in to a hash as key value pairs
+    dictionary << {word => definition}
 end
+
+
+def lookup(word)
+    return dictionary
+end
+def total_words
+    #return the number of keys from hash
+    # .length will return the number of value key PAIRS 
+end
+end
+# dictionary = Definition.new
+# p dictionary.add_word("ruby", "cool time")
+
+
+# spilt it into unique ch
