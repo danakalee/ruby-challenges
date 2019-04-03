@@ -25,5 +25,25 @@
 # helper methods, except for .each
 
 def in_array_strict? (string, arr, strict)
-    # your code goes here
+    case strict 
+    when true 
+    arr.include?(string) ? true : false 
+    when false 
+        arr.each do |first_element|
+        string.downcase == first_element.downcase
+        return true 
+        end
+    end
 end
+
+p in_array_strict?("HeLLo", ["hi", "howdy", "Hello"], false)
+p in_array_strict?("HeLLo", ["hi", "howdy", "Hello"], true)
+#has to be an exact match when strict true- dont sterilize input
+#if string is inside array return true
+#else return false (turnery?)
+
+#if strict is false 
+# change the case of both the string and 
+#when strict is false case doesnt matter - only the word matters
+#looking for string parameter in array parameter
+

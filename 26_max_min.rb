@@ -22,10 +22,6 @@ def max_min(num_string)
      #trying to return the value not the index number of highest and lowest 
      #google min and max for ruby.
      #chain method 
-     
-
-    
-
 end
 
 p max_min("5 2 9 8 23 1")
