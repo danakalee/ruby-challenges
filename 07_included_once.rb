@@ -20,4 +20,12 @@
 
 def included_once (haystack, needle)
   # Your code here
+  index = 0
+  if haystack.include?(needle)
+    index += 1
+  else 
+    
+  end
 end
+#check if needle is in haystack only 1?
+#is needle unique in array
