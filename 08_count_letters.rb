@@ -10,8 +10,25 @@
 # Check your solution by running the tests:
 # ruby tests/08_count_letters_test.rb
 
-def count_letters (string)
-  result = {} # You'll need an empty hash to get started!
+#treat the string like an array 
+#go through it from beginning to end and the order is important
 
+# You'll need an empty hash to get started!
+#take the input turn it into an array
+#make the array a variable
+#loop through elements in array 
+#check if element exists in result hash
+#if not add it
+#if it does add a tally
+#return result outside of loops
+
+def count_letters (string)
+  result = {} 
+  characters = string.split(//)
+  for element in characters do
+    result[element] == nil ? result[element] =1: result[element] += 1
+  end 
   return result # return the hash
 end
+
+puts count_letters("hello")
