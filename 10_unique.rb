@@ -21,7 +21,7 @@ def unique(mylist)
   result = {}
   answer = []
     for element in mylist 
-      result[element] == nil ? result[element] =1: result[element] += 1
+      result[element] == nil ? result[element] = 1: result[element] += 1
     end 
   # result.each_key {|key| answer << key} 
    return result.keys 
